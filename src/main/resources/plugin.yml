@@ -1,0 +1,15 @@
+name: Message
+version: ${project.version}
+main: me.akameki.message.Main
+api-version: 1.16
+authors: [Akameki]
+description: Simple messaging with reply system
+commands:
+  message:
+    aliases: [msg, dm]
+    description: message a player
+    usage: /<command> <player>
+  reply:
+    aliases: [r]
+    description: reply to last player that you messaged or messaged you
+    usage: /<command>
