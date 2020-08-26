@@ -44,6 +44,7 @@ public final class Main extends JavaPlugin implements TabExecutor {
             for (int i = 1; i < args.length; i++) {
                 message.append(" ").append(args[i]);
             }
+            if (message.toString().equals("")) return true;
             if (player.equals(target)) {
                 player.sendMessage(ChatColor.GRAY + "[You-> You]" + message);
             } else {
@@ -70,6 +71,7 @@ public final class Main extends JavaPlugin implements TabExecutor {
                 for (String arg : args) {
                     message.append(" ").append(arg);
                 }
+                if (message.toString().equals("")) return true;
                 if (player.equals(target)) {
                     player.sendMessage(ChatColor.GRAY + "[You-> You]" + message);
                 } else {
